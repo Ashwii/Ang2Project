@@ -11,9 +11,8 @@ export class BlueComponent implements OnInit {
 
   ngOnInit() {
   }
-  blue(){
-  this.name = "Blue";
-  return;
+  blue(name){
+  alert (name);
   }
 
 }

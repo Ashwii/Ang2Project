@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pink.component.css']
 })
 export class PinkComponent implements OnInit {
-	name = "pink"
+	clrrr = "pink";
   constructor() { }
 
   ngOnInit() {
   }
-  pink(){
-   this.name = "pink";
-   return;
+  pink(clrrr){
+   alert (clrrr);
   }
 
 }
