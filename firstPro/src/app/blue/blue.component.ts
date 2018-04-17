@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlueComponent implements OnInit {
 	name = "Blue";
+  isVisible = false;
   constructor() { }
 
   ngOnInit() {
   }
-  blue(name){
-  alert (name);
+  blue(){
+  this.isVisible = true;
   }
 
 }

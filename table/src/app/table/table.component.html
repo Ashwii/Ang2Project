@@ -1,0 +1,23 @@
+
+<button (click)=toggle()>show/hide</button>
+
+<table>
+	<thead>
+	 <tr>
+		<th class="col-sm-1">S.No</th>
+		<th class="col-sm-3">Name</th>
+		<th class="col-sm-4">Bording Point</th>
+		<th class="col-sm-4">Destination Point</th>
+		<th class="col-sm-4">Arrival Time</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor = let plane of planes;let i = index>
+		<td>{{i + 1}}</td>
+		<td>{{plane.name}}</td>
+		<td>{{plane.bordingpoint}}</td>
+		<td>{{plane.destinationpoint}}</td>
+		<td>{{plane.arrivaltime}}</td>
+	</tr>
+	</tbody>
+</table>

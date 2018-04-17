@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PinkComponent implements OnInit {
 	clrrr = "pink";
+  isVisible = false;
   constructor() { }
 
   ngOnInit() {
   }
-  pink(clrrr){
-   alert (clrrr);
+  pink(){
+  this.isVisible = true;
+   
   }
 
 }

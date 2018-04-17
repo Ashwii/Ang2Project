@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreenComponent implements OnInit {
   clr = "green";
+  isVisible = false;
   constructor() { }
 
   ngOnInit() {
   }
-  green(clr){
-  alert (clr);
+  green(){
+  this.isVisible = true;
   }
 
 }

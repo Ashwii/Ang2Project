@@ -1,0 +1,8 @@
+table thead{
+	background-color: black;
+	color: white;
+	font-family: verdana;
+}
+.odd{
+	background-color: white;
+}
