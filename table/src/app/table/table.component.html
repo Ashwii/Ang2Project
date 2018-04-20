@@ -1,23 +1,26 @@
 
-<button (click)=toggle()>show/hide</button>
-
-<table>
+<h1 style="text-align: center"> Table Project</h1>
+<button (click)="hide=!hide">show/hide</button>
+<table *ngIf="hide">
 	<thead>
 	 <tr>
-		<th class="col-sm-1">S.No</th>
-		<th class="col-sm-3">Name</th>
-		<th class="col-sm-4">Bording Point</th>
-		<th class="col-sm-4">Destination Point</th>
-		<th class="col-sm-4">Arrival Time</th>
+		<th class="col-lg-1">S.No</th>
+		<th class="col-lg-2">Name</th>
+		<th class="col-lg-2">Bording Point</th>
+		<th class="col-lg-2">Destination Point</th>
+		<th class="col-lg-2">Departure Time</th>
+		<th class="col-lg-3">Arrival Time</th>
 	</tr>
 	</thead>
-	<tbody>
-	<tr *ngFor = let plane of planes;let i = index>
+	<tbody *ngFor = "let plane of planes;let i = index" [ngClass] = "i % 2 === 0 ? 'even' : 'odd'">
+	<tr>
 		<td>{{i + 1}}</td>
 		<td>{{plane.name}}</td>
-		<td>{{plane.bordingpoint}}</td>
-		<td>{{plane.destinationpoint}}</td>
-		<td>{{plane.arrivaltime}}</td>
+		<td>{{plane.bordingPoint}}</td>
+		<td>{{plane.destinationPoint}}</td>
+		<td>{{plane.departureTime}}</td>
+		<td>{{plane.arrivalTime}}</td>
 	</tr>
 	</tbody>
 </table>
+
