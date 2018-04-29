@@ -1,0 +1,13 @@
+.test-pink, .test-blue, .test-green{
+	height: 100px;
+	width: 100px;
+}
+.test-pink{
+	background-color: pink;
+}
+.test-blue{
+	background-color: blue;
+}
+.test-green{
+	background-color: green;
+}

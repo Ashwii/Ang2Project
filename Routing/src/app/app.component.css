@@ -1,0 +1,9 @@
+app-home{
+	background-color: blue;
+	border-style: 2px solid red;
+}
+
+router-outlet{
+	background-color: violet;
+	border-style: 2px solid red;
+}

@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
- 
 planes =[
 {
 name: "Jet Airways",
@@ -92,6 +91,6 @@ arrivalTime: "2018-04-17T02:58:13.768Z"
 
   ngOnInit() {
   }
-  
- 
- }
+
+}
+
