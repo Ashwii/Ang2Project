@@ -26,9 +26,9 @@ const myRoutes : Routes = [
     TableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     RouterModule.forRoot(myRoutes)  
-  ]
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
