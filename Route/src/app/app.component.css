@@ -1,0 +1,13 @@
+h1{
+    background:lightblue;
+    padding:10px;
+    margin:0px;
+}
+.nav li a:hover{
+    background: blueviolet;
+    color:white;
+}
+nav{
+    margin:0px;
+    padding:0px;
+}
